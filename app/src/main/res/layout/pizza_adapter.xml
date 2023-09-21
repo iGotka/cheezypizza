@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="60dp">
+
+
+    <ImageView
+        android:id="@+id/img_pizza"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/peperoni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_pizza"
+        android:layout_width="100dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_vkusno"
+        android:layout_width="100dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pizza" />
+</androidx.constraintlayout.widget.ConstraintLayout>

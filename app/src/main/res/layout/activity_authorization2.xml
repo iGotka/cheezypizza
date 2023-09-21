@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AuthorizationActivity"
-    android:background="#99ff99">
+    android:background="#99ff99"
+    tools:context=".AuthorizationActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:ems="10"
+        android:hint="Логин"
         android:inputType="text"
-        android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -36,32 +36,35 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="Пароль)"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
 
     <Button
-        android:id="@+id/loginbutton"
+        android:id="@+id/regbutton"
         android:layout_width="216dp"
         android:layout_height="43dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#808080"
+        android:onClick="signin"
         android:text="Войти"
-        android:background="#8080"
         android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
-        android:id="@+id/regbutton"
+        android:id="@+id/backbutton"
         android:layout_width="215dp"
         android:layout_height="44dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="#808080"
+        android:onClick="registration"
         android:text="Регистрация"
-        android:background="#8080"
         android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+        app:layout_constraintTop_toBottomOf="@+id/regbutton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
