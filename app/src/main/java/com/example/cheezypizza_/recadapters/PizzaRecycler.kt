@@ -17,24 +17,23 @@ class MyPizza{val list = arrayListOf(pizza(R.drawable.peperoni,"Peperoni", "Vkus
 }
 
 class PizzaRecycler(val context: Context, val list: ArrayList<pizza>): RecyclerView.Adapter<PizzaRecycler.MyVH>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PizzaRecycler.MyVH {
         val root = LayoutInflater.from(context).inflate(R.layout.pizza_adapter,parent,false)
-        return MyVH(root)
-    }
-
-    override fun onBindViewHolder(holder: PizzaRecycler.MyVH, position: Int) {
-        holder.image.setImageResource(list[position].image)
-        holder.TextView.setText(list[position].name_pizza)
-        holder.TextView2.setText(list[position].name_vkusno)
-    }
-
-    override fun getItemCount(): Int {
-        return list.size
+        return PizzaRecycler.MyVH(root)
     }
     class MyVH(itemView: View):RecyclerView.ViewHolder(itemView){
         val image: ImageView = itemView.findViewById(R.id.img_pizza)
         val TextView: TextView = itemView.findViewById(R.id.text_pizza)
         val TextView2: TextView = itemView.findViewById(R.id.text_vkusno)
+    }
+    override fun onBindViewHolder(holder: PizzaRecycler.MyVH, position: Int) {
+        holder.image.setImageResource(list[position].image)
+        holder.TextView.setText(list[position].name_pizza)
+        holder.TextView2.setText(list[position].name_vkusno)
+    }
+    override fun getItemCount(): Int {
+        return list.size
     }
 }
 

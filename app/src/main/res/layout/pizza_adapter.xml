@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="410dp"
     android:layout_height="60dp">
-
-
     <ImageView
         android:id="@+id/img_pizza"
         android:layout_width="56dp"
